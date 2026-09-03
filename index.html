@@ -31,9 +31,6 @@
 
     <link rel="stylesheet" href="style.css?v=2" />
   </head>
-
-  <body>
-
   <body>
     <main class="page">
       <!-- 상단 -->
@@ -149,5 +146,21 @@
         <div class="ticker-text">SLOWLY BUT STEADILY ★</div>
       </div>
     </div>
+    <!-- GA4 카드 클릭 측정 -->
+    <script>
+      const linkCards = document.querySelectorAll(".link-card");
+
+      linkCards.forEach((card) => {
+        card.addEventListener("click", function () {
+          gtag("event", "link_click", {
+            link_name: this.dataset.linkName,
+            link_category: this.dataset.linkCategory,
+            link_url: this.href,
+            link_text: this.innerText.trim(),
+            transport_type: "beacon",
+          });
+        });
+      });
+    </script>
   </body>
 </html>
