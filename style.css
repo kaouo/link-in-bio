@@ -15,13 +15,13 @@ html {
 }
 
 body {
+  font-family: "Inconsolata", "Apple SD Gothic Neo", "Pretendard", sans-serif;
+
   margin: 0;
   padding-bottom: 44px;
 
   background-color: #ffffff;
   color: #11111b;
-
-  font-family: "Inconsolata", "Pretendard", sans-serif;
 }
 
 /* =========================
@@ -65,11 +65,11 @@ footer {
 .title-area h1 {
   margin: 0;
 
-  color: #ff49b9;
+  color: #004df2;
 
   font-family: "Space Grotesk", sans-serif;
 
-  font-size: clamp(34px, 9vw, 54px);
+  font-size: clamp(30px, 7vw, 44px);
   font-weight: 700;
   line-height: 1;
   letter-spacing: -2px;
@@ -92,7 +92,7 @@ footer {
   right: 2px;
   bottom: 0;
 
-  color: #ff4fb3;
+  color: #ff5ab7;
 }
 
 /* =========================
@@ -104,12 +104,12 @@ footer {
 
   text-align: center;
 
-  font-family: "Inconsolata", "Pretendard", sans-serif;
-
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.45;
-  letter-spacing: -0.4px;
+  font-family: "Apple SD Gothic Neo", "Pretendard", sans-serif;
+  color: #949494;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: -0.3px;
 }
 
 /* =========================
@@ -141,10 +141,10 @@ footer {
   width: 6px;
   height: 6px;
 
-  background-color: #c8ff3d;
+  background-color: #43ffdd;
   border-radius: 50%;
 
-  box-shadow: 0 0 0 3px rgba(200, 255, 61, 0.2);
+  box-shadow: 0 0 0 3px rgba(160, 255, 225, 0.2);
 }
 
 /* =========================
@@ -232,18 +232,18 @@ footer {
 .link-content {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
 
   min-width: 0;
 
-  font-family: "Pretendard", sans-serif;
+  font-family: "Inconsolata", sans-serif;
 }
 
 .link-content strong {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: -0.4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.6px;
 }
 
 .link-content span {
@@ -263,32 +263,30 @@ footer {
   font-family: "Inconsolata", monospace;
 
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 200;
 }
 
 /* =========================
    8. 카드 색상
 ========================= */
+.pastel-pink {
+  background-color: #ffedef;
+}
 
-.blue {
-  background-color: #b8c8ff;
-  color: #11111b;
+.pastel-yellow {
+  background-color: #fffcd9;
+}
+
+.pastel-mint {
+  background-color: #ebffe7;
+}
+
+.pastel-blue {
+  background-color: #ebf9ff;
 }
 
 .blue .link-content span {
   color: rgba(17, 17, 27, 0.62);
-}
-
-.soft {
-  background-color: #ffe0ee;
-}
-
-.lime {
-  background-color: #dff5b2;
-}
-
-.pink {
-  background-color: #ffc8df;
 }
 
 /* =========================
@@ -330,7 +328,7 @@ footer {
 
   background-color: #16163b;
   color: #ffffff;
-  border-top: 3px solid #c8ff3d;
+  border-top: 3px solid #43ffdd;
 
   white-space: nowrap;
 }
@@ -385,7 +383,7 @@ footer {
   }
 
   .title-area h1 {
-    font-size: clamp(32px, 9.5vw, 42px);
+    font-size: clamp(28px, 8vw, 36px);
     letter-spacing: -1.8px;
   }
 
@@ -400,6 +398,7 @@ footer {
   /* 소개 문구 */
 
   .intro {
+    font-family: "Apple SD Gothic Neo", "Pretendard", sans-serif;
     margin: 8px 0 10px;
 
     font-size: 15px;
